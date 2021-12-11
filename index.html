@@ -6,6 +6,12 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="bootstrap.min.css">
      <title>Poll</title>
+<script>
+   function reveal(){
+      document.getElementById("first").style.display = 'none';
+      document.getElementById("second").style.display = 'block';
+   }
+</script>
 <style>
 body{
 background-color: grey;
@@ -17,16 +23,19 @@ font-color: white;
 </style>
  </head>
  <body>
-     <center>
+  <center id="second" style="display: none">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+     <center id="first">
 <br>
 <br>
 <br>
          <h1>What do you put first milk or cereal?</h1>
          <br>
-         <a class="btn btn-primary" onclick="window.location.href='https://youtu.be/dQw4w9WgXcQ'">Milk</a>
+         <a class="btn btn-primary" onclick="reveal();alert('Ok')">Milk</a>
          <br>
          <br>
-         <a class="btn btn-info" onclick="window.location.href='https://youtu.be/dQw4w9WgXcQ'">Cereal</a>
+         <a class="btn btn-info" onclick="reveal()">Cereal</a>
      </center>
  </body>
  </html>
